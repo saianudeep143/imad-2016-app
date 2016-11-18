@@ -1,0 +1,92 @@
+#timeline {
+     background-color: #F6F6F6;
+     height: 400px;
+}
+.timeline-line {
+     position: absolute;
+     left: 50%;
+     border-left: 1px solid #CCC;
+     height: 100%;
+     
+}
+.timeline-content-holder {
+     
+}
+
+.timeline-content {
+     position: relative;
+     border: 1px solid #DDD;
+     margin: 6px 10px;
+     background-color: white;
+     padding: 10px;
+}
+
+.timeline-arrow {
+	position: absolute;
+     left: 100%;
+     top: 50%;
+}
+
+.timeline-arrow:after, .timeline-arrow:before {
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.timehold-right .timeline-arrow, .timehold-right .timeline-arrow {
+     left: 0;
+}
+
+.timeline-arrow:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: white;
+	border-width: 10px;
+     margin-top: -10px;
+}
+.timeline-arrow:before {
+	border-color: rgba(0, 0, 0, 0);
+	border-left-color: #BBB;
+	border-width: 11px;
+     margin-top: -11px
+}
+
+.timehold-right .timeline-arrow:after {
+     border-color: rgba(255, 255, 255, 0);
+     border-right-color: white;
+     margin-left: -20px;
+}
+
+.timehold-right .timeline-arrow:before {
+     border-color: rgba(255, 255, 255, 0);
+     border-right-color: #BBB;
+     margin-left: -22px;
+}
+
+.timeline-dot {
+     position: absolute;
+     right: -34px;
+     top: 50%;
+     background-color: white;
+     border-radius: 50%;
+     width: 14px;
+     height: 14px;
+     margin-top: -7px
+}
+
+.timeline-dot:before {
+     border-radius: 50%;
+     content: "";
+     display: block;
+     width: 5px;
+     height: 5px;
+     border: 4px solid orange;
+     margin-left: 3px;
+     margin-top: 3px
+}
+
+.timehold-right  .timeline-dot {
+     left: -32px;    
+}
